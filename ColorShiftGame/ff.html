@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    .parallax-container {
+      width: 100%;
+      height: 100vh; /* Adjust the height based on your needs */
+      overflow: hidden;
+      position: relative;
+    }
+    .parallax-bg {
+      width: 100%;
+      height: 200vh; /* Adjust the height based on your needs */
+      background-image: url('bg1.jpg'); /* Replace with your actual image path */
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateZ(0); /* Create a new stacking context to prevent jittering */
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax-container">
+    <div class="parallax-bg"></div>
+  </div>
+
+  <script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const parallaxContainer = document.querySelector('.parallax-container');
+      const parallaxBg = document.querySelector('.parallax-bg');
+
+      // Parallax effect on scroll
+      window.addEventListener('scroll', () => {
+        const scrollOffset = window.scrollY;
+        parallaxBg.style.transform = `translate3d(0, -${scrollOffset * 0.5}px, 0)`;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+.header{
+    padding: 1em;
+}
+
+.header h1{
+    text-align: left;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    width:100%;
+    max-width:1503px;
+    height: 1.5rem; 
+  }
+
+
+
+/*Clicker style */
+
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#click-btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: #db2d36;
+
+}
+
+#score, #timer {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+
+
+/* Maze Game style */
+
+#maze-container {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    grid-template-rows: repeat(8, 40px);
+    gap: 1px;
+    background-color: #ecf0f1; 
+    border: 4px solid #bdc3c7; 
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.maze-cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bdc3c7;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #333; 
+    position: relative;
+}
+
+.wall {
+    background-color: #95a5a6; 
+}
+
+.player {
+    background-color: #e74c3c; 
+    border-radius: 50%;
+    transition: transform 0.1s ease-out;
+}
+
+.goal {
+    background-color: #2ecc71; 
+    border-radius: 50%;
+}
+
+.info {
+    color: #333; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db; 
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#maze-container2 {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 1px;
+    background-color: #ecf0f1; 
+    border: 4px solid #bdc3c7; 
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#maze-container3 {
+    display: grid;
+    grid-template-columns: repeat(14, 40px);
+    grid-template-rows: repeat(14, 40px);
+    gap: 1px;
+    background-color: #ecf0f1;
+    border: 4px solid #bdc3c7; 
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}

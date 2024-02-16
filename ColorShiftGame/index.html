@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Color Shift Game</title>
+</head>
+<body>
+  <header>
+    <h1><a href='../index.html'>Don't Get Mad Games</a></h1>
+</header>
+<span class="score">Score: 0</span>
+  <div id="game-container">
+    <div id="background"></div>
+    <div id="background2"></div>
+    <div id="player-square"></div>
+    <div id="target-square"></div>
+  </div>
+  <div class="buttons">
+    <button id="restart-btn">Restart</button>
+      <button id="back-btn"><a href="../index.html">Go Back</a></button>
+    </div>
+  <footer>
+    <p>&copy; 2024 Don't Get Mad Games</p>
+</footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const parallaxBg1 = document.getElementById('background');
+      const parallaxBg2 = document.getElementById('background2');
+      let scrollPosition = 0;
+
+      function scrollBackground() {
+        scrollPosition += 1;
+        parallaxBg1.style.transform = `translate3d(0, ${scrollPosition}px, 0)`;
+        parallaxBg2.style.transform = `translate3d(0, ${scrollPosition}px, 0)`; 
+
+       
+        if (scrollPosition >= parallaxBg1.clientHeight) {
+          scrollPosition = 0;
+        }
+
+        requestAnimationFrame(scrollBackground);
+      }
+
+     
+      scrollBackground();
+    });
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

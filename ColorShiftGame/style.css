@@ -1,0 +1,120 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #ffffff;
+  text-align: left;
+}
+
+header {
+  background-image: url('../images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.score{
+  color: #B8C6DC;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+  border: solid #215A6D 1px;
+}
+.buttons {
+  margin-top: 0.5vmin;
+  margin-bottom: 5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #1a6fd0;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline;
+  margin: 5px;
+  -webkit-box-shadow: 6px 9px 8px -4px rgb(0, 142, 236);
+  -moz-box-shadow: 6px 9px 8px -4px rgb(0, 142, 236);
+  box-shadow: 6px 9px 8px -4px rgb(0, 132, 184);
+
+}
+
+button:hover {
+  background-color: #008ba3;
+}
+
+#game-container {
+  margin: 5vmin auto;
+  width: 160vmin;
+  position: relative;
+  height: 80vmin;
+  border: 2px solid #333;
+  overflow: hidden;
+  background-color: rgb(239, 191, 0);
+}
+
+#background {
+  width: 100%;
+  height: 200vh;
+  background-image: url('bg1.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#background2{
+  width: 100%;
+  height: 200vh; 
+  background-image: url('bg1.jpg'); 
+  background-size: cover;
+  position: absolute;
+  top: -200vh;
+  left: 0;
+}
+
+#player-square, #target-square {
+  width: 5%;
+  height: 10%;
+  position: absolute;
+}
+
+.obstacle{
+  width: 90%;
+  height: 10%;
+  position: absolute;
+}

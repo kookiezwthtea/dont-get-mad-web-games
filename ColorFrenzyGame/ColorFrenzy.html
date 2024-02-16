@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Frenzy Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href='../index.html'>Don't Get Mad Games</a></h1>
+    </header>
+
+    <div class="header">
+        <h1 class="header-text">Target color:</h1>
+        <div id="target"></div>
+    </div>
+
+    <div id="game-container">
+        <div id="moving-object"></div>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 60s</div>
+    </div>
+
+    <div class="buttons">
+        <button id="restart-btn">Restart</button>
+        <button id="back-btn"><a href="../index.html">Go Back</a></button>
+    </div>
+
+
+    <!-- Game Over Modal -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGameOverModal()">&times;</span>
+            <p>Game Over! Your score: <span id="final-score">0</span></p>
+            <button id="try-again-button">Try Again</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Don't Get Mad Games</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

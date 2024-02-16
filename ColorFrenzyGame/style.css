@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #ffffff;
+  text-align: left;
+}
+
+header {
+  background-image: url('../images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  margin: auto auto auto 5vmin;
+  display: inline-flex;
+}
+
+.header-text {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  text-shadow: -15px 5px 20px #ced0d3;
+  transform: translate(-20%, -10%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650,
+    10px 10px 0px #FFD662,
+    15px 15px 0px #FF80BF,
+    20px 20px 0px #EF5097,
+    25px 25px 0px #6868AC,
+    30px 30px 0px #90B1E0;
+}
+
+#target {
+  margin: auto;
+  width: 12vmin;
+  height: 12vmin;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#game-container {
+  margin: auto auto 5vmin auto;
+  width: 50%;
+  position: relative;
+  height: 400px;
+  border: 2px solid rgb(207, 249, 38);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  overflow: hidden;
+  background-color: #f0f338;
+  border-radius: 10px;
+  display: flex;
+}
+
+#moving-object {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+#score,
+#timer {
+  font-size: 20px;
+  margin-top: 2vmin;
+  margin-left: 2vmin;
+  color: #333;
+}
+
+/* Game Over Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#try-again-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-bottom: 5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #f7c728;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline;
+  margin-top: 20px;
+  margin: 5px;
+  -webkit-box-shadow: 6px 9px 8px -4px rgb(0, 142, 236);
+  -moz-box-shadow: 6px 9px 8px -4px rgb(0, 142, 236);
+  box-shadow: 6px 9px 8px -4px rgb(141, 184, 0);
+
+}
+
+button:hover {
+  background-color: #f44e01;
+}

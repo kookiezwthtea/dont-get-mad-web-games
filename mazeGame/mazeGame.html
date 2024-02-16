@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Don't Get Mad</title>
+</head>
+
+<body>
+    <div id="container">
+    <header class="header">
+        <h1><a href='../index.html'>Don't Get Mad Games</a></h1>
+    </header>
+    <h1 id="info">Before you start, here is a small warm-up for you. Be quick :)</h1>
+    <section id="game-container" class="game-section">
+        <button id="click-btn" onclick="handleClick()">Click me!</button>
+        <div id="score"></div>
+        <div id="level"></div>
+        <div id="timer"></div>
+    </section>
+
+    <section id="game1" class="game-section">
+        <div id="maze-container"></div>
+        <div class="info" id="info">Use arrow keys to move. Reach the red goal to win!</div>
+        <button id="restart-btn">Restart Level</button>
+    </section>
+
+    <section id="game2" class="game-section">
+        <div id="maze-container2"></div>
+        <div class="info" id="info2">Use arrow keys to move. Reach the red goal to win!</div>
+        <button id="restart-btn2">Restart Level</button>
+    </section>
+
+    <section id="game3" class="game-section">
+        <div id="maze-container3"></div>
+        <div class="info" id="info3">Use arrow keys to move. Reach the red goal to win!</div>
+        <button id="restart-btn3">Restart Level</button>
+        <button id="play-victory-sound" style="background-color:white; color:brown"></button>
+    </section>
+
+    <span id="gameend" class="game-section">
+        <img src="../images/jumpscare.gif" alt="image" style="width:100vw" />
+        <audio id="jumpscare-sound" autoplay>
+            <source src="../images/jumpscare-sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </span>
+    <footer class="footer">
+        <p>&copy; 2024 Don't Get Mad Games</p>
+    </footer>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="clicker.js"></script>
+    <script src="maze.js"></script>
+    <script src="maze2.js"></script>
+    <script src="maze3.js"></script>
+
+</body>
+
+</html>
